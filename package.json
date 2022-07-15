@@ -7,7 +7,7 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "format": "concurrently -c \"#BC507A\",\"#7963E6\",\"#7A8387\" -n prettier,eslint,stylelint \"prettier --ignore-path \\\"./.gitignore\\\" --write \\\"**/*.{js,jsx,ts,html,pug,css,pcss,sass,scss,json}\\\"\" \"eslint --cache --ignore-path \\\"./.gitignore\\\" --fix \\\"**/*.{js,jsx,ts}\\\"\" \"stylelint --cache --ignore-path \\\"./.gitignore\\\" --fix \\\"**/*.css\\\"\"",
+        "format": "concurrently -c \"#BC507A\",\"#7963E6\",\"#7A8387\" -n prettier,eslint,stylelint \"prettier --ignore-path \\\"./.gitignore\\\" --write \\\"**/*.{js,jsx,ts,tsx,html,css,json}\\\"\" \"eslint --cache --ignore-path \\\"./.gitignore\\\" --fix \\\"**/*.{js,jsx,ts}\\\"\" \"stylelint --cache --ignore-path \\\"./.gitignore\\\" --fix \\\"**/*.css\\\"\"",
         "lint": "concurrently -c \"#7963E6\",\"#7A8387\" -n eslint,stylelint \"eslint --cache --ignore-path \\\"./.gitignore\\\" \\\"**/*.{js,jsx,ts}\\\"\" \"stylelint --cache --ignore-path \\\"./.gitignore\\\" \\\"**/*.css\\\"\""
     },
     "lint-staged": {
