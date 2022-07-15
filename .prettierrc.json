@@ -1,0 +1,11 @@
+{
+    "overrides": [
+        {
+            "files": "**/*.{js,jsx,ts,tsx}",
+            "options": {
+                "semi": true,
+                "singleQuote": true
+            }
+        }
+    ]
+}
