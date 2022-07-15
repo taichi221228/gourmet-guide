@@ -17,7 +17,7 @@
     "overrides": [
         {
             "files": "**/*.ts",
-            "plugins": ["@typescript-eslint"],
+            "plugins": ["plugin:tailwindcss/recommended", "@typescript-eslint"],
             "parser": "@typescript-eslint/parser",
             "extends": ["plugin:@typescript-eslint/recommended"]
         }
