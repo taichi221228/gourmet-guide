@@ -16,10 +16,15 @@
     },
     "overrides": [
         {
-            "files": "**/*.ts",
-            "plugins": ["plugin:tailwindcss/recommended", "@typescript-eslint"],
+            "files": "**/*.{ts,tsx}",
             "parser": "@typescript-eslint/parser",
-            "extends": ["plugin:@typescript-eslint/recommended"]
+            "plugins": ["chakra-ui", "@typescript-eslint"],
+            "extends": ["plugin:@typescript-eslint/recommended"],
+            "rules": {
+                "chakra-ui/props-order": "error",
+                "chakra-ui/props-shorthand": "error",
+                "chakra-ui/require-specific-component": "error"
+            }
         }
     ],
     "settings": {
